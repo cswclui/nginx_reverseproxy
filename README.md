@@ -1,3 +1,3 @@
 # How to use
 
-Run: docker-compose up --scale flask=12
+Run: docker-compose up --scale flask=3
