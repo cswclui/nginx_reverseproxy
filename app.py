@@ -5,4 +5,4 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hello, My container is named: " + socket.gethostname()
+    return "Hello, My container is named: " + socket.gethostname() + "\n"
