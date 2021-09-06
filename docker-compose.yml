@@ -3,7 +3,7 @@ services:
   flask:
     build: .
     volumes:
-      - ./py:/src
+      - ./app.py:/src/app.py
     environment:
       - FLASK_APP=/src/app.py
   nginx:
@@ -11,6 +11,6 @@ services:
     ports:
       - "2000:80"
     volumes:
-      - ./nginx:/etc/nginx/conf.d
+      - ./demo.conf:/etc/nginx/conf.d/demo.conf
     depends_on:
       - flask
